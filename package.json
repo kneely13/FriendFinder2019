@@ -1,0 +1,25 @@
+{
+  "name": "FriendFinder2019",
+  "version": "1.0.0",
+  "description": "Compatibility-based \"Friend Finder\" application which takes your results of the survey and matches them with other users who's answers are most compatible to you.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kneely13/FriendFinder2019.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kneely13/FriendFinder2019/issues"
+  },
+  "homepage": "https://github.com/kneely13/FriendFinder2019#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
