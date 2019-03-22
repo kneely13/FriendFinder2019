@@ -12,7 +12,10 @@ module.exports=function(app) {
 //GET Route to -/survey- which displays the survey page.
 // This html GET request handles when the user "visits" a page.
 //All this code below, the user is shown an HTML page of content
-
+    app.get('/', function (req,res) {
+        res.sendFile(path.join(_dirname, "/../public/home.html"));
+    });
+    
     app.get('/survey', function(req,res) {
         res.sendFile(path.join(_dirname, "/../public/survey.html"));
     });

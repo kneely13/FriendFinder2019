@@ -9,7 +9,7 @@ const express= require('express');
 var app = express()
 
 //Initial port being set to use later in our listener
-var PORT= process.env.PORT || 8080;
+var PORT= process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing, or express.json and express.urlEncoded make it easy for our server to interpret data sent to it. The code below is pretty standard.
 app.use(express.urlencoded({ extended:true}));

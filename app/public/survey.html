@@ -14,19 +14,22 @@
   <!-- Chosen -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="friends.js"></script>
+  <script src="server.js"></script>
 </head>
 
 <body>
 
-  <div class="container">z
-    <h2>Survey Questions</h2>
+  <div class="container">
+    <h1>Survey Questions</h1>
     <hr>
 
-    <h3><strong>Tell us About You</strong></h3>
+    <h3>Tell us About You</h3>
+    <br>
     <h4>Name (Required)</h4>
     <input type="text" id="name" class="form-control" required>
-
+<br>
     <h4>Link to Photo Image (Required)</h4>
     <input type="text" id="photo" class="form-control" required>
 
@@ -38,7 +41,7 @@
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3</option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
@@ -51,7 +54,7 @@
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3</option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
@@ -65,7 +68,7 @@
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3</option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
@@ -79,7 +82,7 @@
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3</option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
@@ -88,12 +91,12 @@
     <br>
 
     <h3><strong>Question 5</strong></h3>
-    <h4>You like to party?</h4>
+    <h4>You see yourself as a partier.</h4>
     <select class="chosen-select" id="q5">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3</option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
@@ -102,12 +105,12 @@
     <br>
 
     <h3><strong>Question 6</strong></h3>
-    <h4>You hope to meet someone who is loyal as a friend and or partner.</h4>
+    <h4>You have had atleast one or more person(s) act unloyal to you as a friend (Fake Friends) and or partner (Cheating). </h4>
     <select class="chosen-select" id="q6">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3</option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
@@ -121,7 +124,7 @@
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3</option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
@@ -134,7 +137,7 @@
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3</option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
@@ -147,7 +150,7 @@
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3</option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
@@ -155,27 +158,26 @@
     <br>
     <br>
     <h3><strong>Question 10</strong></h3>
-    <h4>Your more of a "Daytime" person than a "Nighttime" person .</h4>
+    <h4>Your more of a "Daytime" person rather than a "Nighttime" person? (If your both or non, choose ) </h4>
     <select class="chosen-select" id="q10">
       <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
+      <option value="1">1 (Strongly / Mostly Disagree)</option>
+      <option value="2">2 (Both / Never feel tired) </option>
+      <option value="3">3 (Neutral / Can Vary)  </option>
+      <option value="4">4 (Neither / Tired all the time) </option>
+      <option value="5">5 (Strongly / Mostly Agree)</option>
     </select>
     <br>
     <br>
     <br>
     <h3><strong>Question 11</strong></h3>
-    <h4>Being a risk taker is more enjoyable then having to think through prior.</h4>
+    <h4>You believe in Christianity?</h4>
     <select class="chosen-select" id="q11">
       <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3 (Nuetral)</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
+      <option value="1">1 (Disagree)</option>
+      <option value="2">2 (I follow a different religion which is not Christianity?)</option>
+      <option value="3">3 (Neither/ Want to understand a religion and or Christianity in general.)</option>
+      <option value="4">4 (Agree)</option>
     </select>
     <br>
     <br>
@@ -186,7 +188,7 @@
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3 (Nuetral ) </option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
@@ -199,7 +201,7 @@
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3 (Nuetral ) </option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
@@ -212,7 +214,7 @@
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3 (Nuetral ) </option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
@@ -225,22 +227,76 @@
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3 (Nuetral ) </option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
     <br>
     <br>
     <br>
+    <h3><strong>Question 16</strong></h3>
     <h4>You like spontanious actions that have no planning involved prior.</h4>
     <select class="chosen-select" id="q16">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
-      <option value="3">3 (Nuetral ) </option>
+      <option value="3">3 (Neutral) </option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
     </select>
+    <br>
+    <br>
+    <br>
+    <h3><strong>Question 17</strong></h3>
+    <h4>You are needing a workout buddy.</h4>
+    <select class="chosen-select" id="q17">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3 (Neutral) </option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <h3><strong>Question 18</strong></h3>
+    <h4>You enjoy watching and or talking sports.</h4>
+    <select class="chosen-select" id="q18">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3 (Neutral) </option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <h3><strong>Question 19</strong></h3>
+    <h4>Change makes you uncomfortable.</h4>
+    <select class="chosen-select" id="q19">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3 (Neutral) </option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <h3><strong>Question 20</strong></h3>
+    <h4>You love music and or dance.</h4>
+    <select class="chosen-select" id="q20">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2  </option>
+      <option value="3">3 (Neutral) </option>
+      <option value="4">4  </option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+<br>
 
     <br>
     <br>
@@ -248,8 +304,9 @@
     <!-- Submit Button -->
     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
      Submit</button>
-
+<br>
     <hr>
+    <br>
     <footer class="footer">
       <div class="container">
         <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
@@ -340,7 +397,17 @@
             $("#q7").val(),
             $("#q8").val(),
             $("#q9").val(),
-            $("#q10").val()
+            $("#q10").val(),
+            $("#q11").val(),
+            $("#q12").val(),
+            $("#q13").val(),
+            $("#q14").val(),
+            $("#q15").val(),
+            $("#q16").val(),
+            $("#q17").val(),
+            $("#q18").val(),
+            $("#q19").val(),
+            $("#q20").val()
           ]
         };
 
